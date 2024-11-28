@@ -11,7 +11,7 @@ def printRow():
 
 def printMatrix():
     for i in range(col):
-        print("__",end="")
+        print(" _",end="")
     print()
     for i in range(row):
         printRow()
