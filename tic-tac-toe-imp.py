@@ -1,4 +1,4 @@
-
+import subprocess
 
 matrix=[]
 
@@ -19,6 +19,7 @@ def updateMatrix(row, col, symbol):
     matrix[1][1] = symbol
     
 def printMatrix():
+    subprocess.call("clear")
     matrixSize = len(matrix)
     for i in range(matrixSize):
         print(f"{i+1 : ^3}", end="|")
